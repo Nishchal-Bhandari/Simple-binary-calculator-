@@ -45,3 +45,7 @@ if (equ[mlen-1])=="=":
 
 else:
     print("INVALID OPERATION 😭 ")
+print("heelo")
+
+
+hello this is a simple calculater

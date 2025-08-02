@@ -1,7 +1,7 @@
 # Simple-binary-calculator-
 print("\t\t\tSIMPLE CALCULATOR \n\n")
 print("This is a binary calculator💻. you can perform binary operations using it.\n")
-print("Note:\n   \t you can perform +,-,×,÷\n")
+print("Note:\n   \t you can perform +,-,×,÷,^\n")
 print(".........................................")
 
 equ=input()
@@ -18,6 +18,8 @@ if (equ[mlen-1])=="=":
        opn="×"
    elif ("÷"in equ)==True:
        opn="÷"
+   elif ("^" in equ)==True:
+       opn="^"
    else:
         print("INVALID OPERATION 😭 ")
         exit()
@@ -39,7 +41,12 @@ if (equ[mlen-1])=="=":
        res=opd1*opd2
    elif opn=="÷":
        res=opd1/opd2
-    
+   elif opn=="^":
+       res=1;
+       for i in range(opd2):
+          
+          res=res*opd1
+           
     
    print(res)
 
